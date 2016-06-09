@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+
+h1, h2, h3 {
+  font-size: 22px;
+}
+
+main > h1:first-child::first-letter {
+  font-size: 60px;
+}
+
+header > img {
+  float: left;
+}
+
+header > h2, header > h3 {
+  text-indent: 30px;
+}
+
+header > h2 {
+  font-size: 38px;
+  color: orange;
+  font-style: italic;
+  text-shadow: 2px 2px 3px black;
+}
+
+a, a:visited {
+  color: orange;
+}
+
+a:hover, a:focus {
+  color: green;
+}
+
+ul > li {
+  margin-bottom: 7px;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+}
