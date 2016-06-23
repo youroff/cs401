@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Halloween Store</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
@@ -12,9 +13,41 @@
 
     <h3>For the little Goblin in all of us!</h3>
   </header>
-  
+  <nav>
+    <ul id="main-menu">
+      <li>
+        <a href="index.html" class="active">Home</a>
+      </li>
+      <li>
+        <a href="#">Product List</a>
+      </li>
+      <li>
+        <a href="#">Personal</a>
+      </li>
+      <li>
+        <a href="#">Decorating Ideas</a>
+        <ul>
+          <li>
+            <a href="#">Outdoor</a>
+          </li>
+          <li>
+            <a href="#">Indoor</a>
+          </li>
+          <li>
+            <a href="#">Table</a>
+          </li>
+          <li>
+            <a href="#">Treats</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Join Email</a>
+      </li>
+    </ul>
+  </nav>
   <aside>
-    <ul>
+    <ul id="side-menu">
       <li>
         <a href="#">Props</a>
       </li>
@@ -22,7 +55,7 @@
         <a href="#">Costumes</a>
       </li>
       <li>
-        <a href="#">Special Effects</a>
+        <a href="#">Special FX</a>
       </li>
       <li>
         <a href="#">Masks</a>
@@ -37,11 +70,13 @@
     
     <section class="product">
       <h2>Product of the week</h2>
-      <img src="images/cat1.jpg" alt="cat pic" width="154" height="122">
+      <a href="products/cat.html">
+        <img src="images/cat1.jpg" alt="cat pic" width="154" height="122">
+      </a>
       <br>
       <a href="products/cat.html">20" Deranged cat</a>
     </section>
-    
+
     <h3>My guarantee</h3>
 
     <p>If you aren't completely satisfied with everything you buy from my site, you can return it for a full refund. <strong>No questions asked!</strong></p>

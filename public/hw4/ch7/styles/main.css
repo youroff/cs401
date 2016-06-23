@@ -1,0 +1,159 @@
+html {
+  background: url('../images/bats.gif');
+}
+
+body {
+  background: white;
+  font-family: sans-serif;
+  width: 800px;
+  margin: auto;
+  border: 3px solid black;
+  box-shadow: 0px 0px 20px 10px black;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-size: 22px;
+}
+
+aside {
+  padding-top: 30px;
+  width: 160px;
+  float: left;
+}
+
+main {
+  margin-top: 20px;
+  width: 594px;
+  float: right;
+}
+
+main, header, footer {
+  padding: 0px 20px;
+}
+
+main > h1:first-child::first-letter {
+  font-size: 60px;
+}
+
+header {
+  padding-top: 10px;
+  padding-bottom: 1px;
+  background: -webkit-linear-gradient(45deg, white, orange, black);
+  background: -moz-linear-gradient(45deg, white, orange, black);
+  background: -ms-linear-gradient(45deg, white, orange, black);
+  background: -o-linear-gradient(45deg, white, orange, black);
+  background: linear-gradient(45deg, white, orange, black);
+}
+
+header > img {
+  float: left;
+}
+
+header > h2, header > h3 {
+  text-indent: 30px;
+}
+
+header > h3 {
+  margin: 0px 0px 20px 0px;
+}
+
+header > h2 {
+  font-size: 38px;
+  margin: 0px;
+}
+
+a, a:visited {
+  color: orange;
+}
+
+a:hover, a:focus {
+  color: green;
+}
+
+footer {
+  clear: both;
+  font-size: 12px;
+  line-height: 50px;
+  text-align: center;
+  border-top: 3px solid black;
+  background: -webkit-linear-gradient(225deg, white, orange, black);
+  background: -moz-linear-gradient(225deg, white, orange, black);
+  background: -ms-linear-gradient(225deg, white, orange, black);
+  background: -o-linear-gradient(225deg, white, orange, black);
+  background: linear-gradient(225deg, white, orange, black);
+}
+
+#main-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#main-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+#main-menu li:hover ul {
+  display: block;
+}
+
+#main-menu li {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;  
+}
+
+#main-menu > li {
+  width: 20%;
+  float: left;
+}
+
+#main-menu a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #f5f5f5;
+  background: black;
+  height: 40px;
+  line-height: 40px;
+}
+
+#main-menu a.active {
+  color: orange;
+}
+
+#main-menu a:hover {
+  background: gray;
+}
+
+#side-menu {
+  list-style-type: none;
+  padding-left: 25px;
+  padding-top: 15px;
+  margin: 0;   
+}
+
+#side-menu li {
+  padding: 0 15px 0 0;
+  margin-bottom: 7px;
+}
+
+#side-menu a {
+  padding-left: 10px;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  background: orange;
+  height: 40px;
+  line-height: 40px;
+}
