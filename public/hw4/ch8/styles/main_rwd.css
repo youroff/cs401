@@ -3,46 +3,49 @@ html {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 body {
   background: white;
   font-family: sans-serif;
-  width: 800px;
+  width: 95%;
+  max-width: 960px;
   margin: auto;
   border: 3px solid black;
   box-shadow: 0px 0px 20px 10px black;
-  margin-bottom: 30px;
+  margin-bottom: 1em;
+  font-size: 100%;
+  padding: 0;
 }
 
 h1, h2, h3 {
-  font-size: 22px;
+  font-size: 1.3em;
 }
 
 aside {
-  padding-top: 30px;
-  width: 160px;
+  padding-top: 2em;
+  width: 30%;
   float: left;
 }
 
 main {
   margin-top: 20px;
-  width: 594px;
-  float: right;
+  width: 70%;
+  float: left;
 }
 
 main, header, footer {
-  padding: 0px 20px;
+  padding: 0px 1em;
 }
 
 main > h1:first-child::first-letter {
-  font-size: 60px;
+  font-size: 2.7em;
 }
 
 header {
-  padding-top: 10px;
-  padding-bottom: 1px;
+  padding-top: .7em;
+  padding-bottom: .1em;
   background: -webkit-linear-gradient(45deg, white, orange, black);
   background: -moz-linear-gradient(45deg, white, orange, black);
   background: -ms-linear-gradient(45deg, white, orange, black);
@@ -51,6 +54,9 @@ header {
 }
 
 header > img {
+  height: auto;
+  max-width: 85px;
+  min-width: 40px;
   float: left;
 }
 
@@ -77,8 +83,8 @@ a:hover, a:focus {
 
 footer {
   clear: both;
-  font-size: 12px;
-  line-height: 50px;
+  font-size: .9em;
+  line-height: 3em;
   text-align: center;
   border-top: 3px solid black;
   background: -webkit-linear-gradient(225deg, white, orange, black);
@@ -116,6 +122,7 @@ footer {
 
 #main-menu > li {
   width: 20%;
+  display: block;
   float: left;
 }
 
@@ -125,8 +132,8 @@ footer {
   text-decoration: none;
   color: #f5f5f5;
   background: black;
-  height: 40px;
-  line-height: 40px;
+  line-height: 3em;
+  margin: 0;
 }
 
 #main-menu a.active {
@@ -145,7 +152,7 @@ footer {
 }
 
 #side-menu li {
-  padding: 0 15px 0 0;
+  padding: 0 25px 0 0;
   margin-bottom: 7px;
 }
 
@@ -159,4 +166,77 @@ footer {
   background: orange;
   height: 40px;
   line-height: 40px;
+}
+
+.product img {
+  height: auto;
+  max-width: 154px;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  html {
+    background: none;
+  }
+  
+  body {
+    box-shadow: none;
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    background: none;
+  }
+  
+  body {
+    box-shadow: none;
+    font-size: 90%;
+  }
+  
+  #main-menu {
+    display: none;
+  }
+  
+  .slicknav_menu {
+    display: block;
+  }
+  
+  aside, main {
+    width: 100%;
+    clear: both;
+  }
+  
+  #side-menu a {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  header img {
+    width: 20%;
+  }
+  header h2 {
+    margin-top: .5em;
+    text-indent: 10px;
+    font-size: 1.7em;
+  }
+  header h3 {
+    margin-top: 0;
+    text-indent: 10px;
+    font-size: 1.1em;
+  }
+  
+  main > h1 {
+    font-size: 1.3em;
+  }
+  
+  main > h1:first-child::first-letter {
+    font-size: 2em;
+  }
 }
