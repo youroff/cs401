@@ -1,0 +1,42 @@
+section img {
+  float: left;
+  margin-right: 30px;
+}
+
+main {
+  width: 454px;
+}
+
+.description {
+  margin-left: 184px;
+}
+
+#right-side {
+  width: 180px;
+  float: right;
+  background: #F5DEB3;
+  padding: 20px 10px;
+}
+
+#right-side ul {
+  list-style: none;
+  padding: 0;
+}
+
+#right-side figure {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+#right-side a {
+  color: black;
+  font-size: .9em;
+}
+
+#right-side a:visited {
+  color: black;  
+}
+
+#right-side a:hover, #right-side a:focus {
+  color: green;
+}
