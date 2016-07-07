@@ -1,0 +1,39 @@
+#product-list {
+  width: 80%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+#product-list td {
+  border: none;
+  line-height: 25px;
+}
+
+#product-list a {
+  color: black;
+}
+
+#product-list > caption {
+  font-size: 1.7em;
+  font-weight: bold;
+  padding: 25px 0px 15px 0px;
+}
+
+#product-list > thead th {
+  text-align: left;
+  color: gray;
+  padding-bottom: 10px;
+}
+
+#product-list > thead th:last-child {
+  text-align: right;
+}
+
+#product-list > tbody > tr > td:first-child {
+  font-weight: bold;
+}
+
+#product-list > tbody > tr > td:last-child {
+  background: #F5DEB3;
+  text-align: right;
+}
