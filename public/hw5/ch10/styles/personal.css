@@ -1,0 +1,27 @@
+header h2 {
+  font-family: 'Creepster', cursive;
+}
+
+@media print {
+  header, footer, aside, nav, video, h2 {
+    display: none;
+  }
+  
+  html {
+    background: none;
+  }
+  
+  h3 {
+    border-bottom: 4px solid black;
+  }
+
+  main {
+    width: 100%;
+  }
+  body {
+    padding: 0 50px;
+    width: 100%;
+    box-shadow: none;
+    border: 0;
+  }
+}

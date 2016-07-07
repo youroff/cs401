@@ -150,13 +150,12 @@ footer {
 }
 
 #side-menu a {
-  padding-left: 10px;
   display: block;
   font-weight: bold;
   text-decoration: none;
   color: black;
   border: 2px solid black;
   background: orange;
-  height: 40px;
-  line-height: 40px;
+  padding: 7px 10px 7px 10px;
+  line-height: 18px;
 }
