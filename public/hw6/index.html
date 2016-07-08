@@ -15,6 +15,7 @@
       
     <script>
       function fToC(t) {
+        t = parseFloat(t);
         if (isNaN(t)) {
           return "It doesn't look like a number! :(";
         } else {
@@ -23,7 +24,7 @@
       }
     
       function convertTemp() {
-        var input = parseFloat(prompt("Enter temperature in Fahrenheit"));
+        var input = prompt("Enter temperature in Fahrenheit");
         alert(fToC(input));
       }
     </script>
