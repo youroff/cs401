@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Temperature calculator</title>
+</head>
+  <body>
+    <h1>Basic version</h1>
+    <button onclick="convertTemp()">Convert F to C</button>
+    
+    <h1>Dynamic version</h1>
+    <form oninput="c.value = fToC(f.value)">
+      F: <input id="f" type="text"> => <output name="c" for="f">
+    </form>
+      
+    <script>
+      function fToC(t) {
+        if (isNaN(t)) {
+          return "It doesn't look like a number! :(";
+        } else {
+          return ((t - 32) * 5/9).toFixed(2) + " degree celsius";
+        }
+      }
+    
+      function convertTemp() {
+        var input = parseFloat(prompt("Enter temperature in Fahrenheit"));
+        alert(fToC(input));
+      }
+    </script>
+  </body>
+</html>
