@@ -15,7 +15,7 @@ function clearForm () {
 function calculateForm () {
   var subtotal = parseFloat($("subtotal").value);
   var tax_rate = parseFloat($("tax_rate").value);
-  if (validate('subtotal', subtotal) && validate('tax_rate', tax_rate)) {
+  if (validate('subtotal', subtotal) & validate('tax_rate', tax_rate)) {
     fields.forEach(function(f) {clearError(f)});
     $("sales_tax").value = (subtotal * tax_rate / 100.0).toFixed(2);
     $("total").value = (subtotal + subtotal * tax_rate / 100.0).toFixed(2);    
@@ -23,7 +23,7 @@ function calculateForm () {
 }
 
 function validate(field, value) {
-  return !isNaN(value) || raiseError(field);
+  return !isNaN(value) && clearError(field) || raiseError(field);
 }
 
 function raiseError(field) {
@@ -35,4 +35,5 @@ function raiseError(field) {
 function clearError(field) {  
   $(field + "_message").style.display = 'inline';
   $(field + "_error_message").style.display = 'none';
+  return true;
 }
