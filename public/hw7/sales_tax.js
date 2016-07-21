@@ -4,15 +4,20 @@ var $ = function (id) {
 
 var fields = ["subtotal", "tax_rate"];
 
+function clearResult() {
+  $("sales_tax").value = '';
+  $("total").value = '';  
+}
+
 function clearForm () {
   fields.forEach(function(f) {clearError(f)});
   $("subtotal").value = '';
   $("tax_rate").value = '';
-  $("sales_tax").value = '';
-  $("total").value = '';
+  clearResult();
 }
 
 function calculateForm () {
+  clearResult();
   var subtotal = parseFloat($("subtotal").value);
   var tax_rate = parseFloat($("tax_rate").value);
   if (validate('subtotal', subtotal) & validate('tax_rate', tax_rate)) {
